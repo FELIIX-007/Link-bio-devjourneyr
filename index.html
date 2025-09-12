@@ -1,69 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <!-- link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- link font -->
-      <!-- link bootstrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-      <!-- link bootstrap -->
-    <title>Link Bio | Dev journeyr</title>
+    <title>LInk Bio - devjourneyr</title>
 </head>
+
 <body>
-
-    <!-- <div id="loading-screen">
-      <div id="loading-bar"></div>
-      <div id="loading-text">0%</div>
-  </div> -->
-
-   <div class="container">  <!-- div paincipal -->
-        <div class="content"> <!-- div secundaria -->
-            <div class="widget1">
-                <div class="photo-logo">
-                    <img src="img/logo devjourneyr.png" alt="photo logo">
+    <main class="container">
+        <section class="card" role="region" aria-label="perfil e links do devjourneyr">
+            <header class="header">
+                <div class="fotoPerfil" aria-hidden="true">
+                    <div><img src="img/logo devjourneyr.png" alt="logo devjourneyr"></div>
                 </div>
-                <div class="infor-user">
-                    <h1>@_Devjourneyr</h1> 
-                </div>
-                <div class="social-media">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-tiktok"></i>
-                    <i class="bi bi-twitter-x"></i>
-                </div>
+                <div>
+                    <div class="title">
+                        <h1>devjourneyr</h1>
 
-                <div class="carousel-names">
-                    <h2>Desing</h2>
-                    <h2>Ux/ui</h2>
-                    <h2>Indentidade visual</h2>
-                    <h2>Front-end</h2>
-                    <h2>Desing grafico</h2>
-                    <h2>Desing</h2>
-                    <h2>Ux/ui</h2>
-                    <h2>Indentidade visual</h2>
-                    <h2>Front-end</h2>
-                    <h2>Desing grafico</h2>
-                </div>
-
-                <div class="widget2">
-                    <div class="names">
-                        <h4>solicite seu</h4>
-                        <h2>orçamento</h2>
                     </div>
-                    <div class="icon">
-                        <i class="bi bi-journal-bookmark-fill"></i>
-                    </div>
+                    <p class="bio">Desenvolvimento Web • Design Grafico • UI/UX</p>
+                    <diav class="bntHeader">
+                        <button class="btn" id="copy" type="button" title="Copiar @devjourneyr">Copiar @</button>
+                        <span class="badge"> Disponìvel para projetos.</span>
                 </div>
+                </div>
+            </header>
+
+            <div class="links" id="links">
+                <a class="link" href="breve.html" target="_blank" rel="noopener" data-="portfolio">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path
+                                d="M3 7h18M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7M8 11h8M8 15h5" />
+                        </svg>
+                        <div>
+                            <div class="label">Portfólio</div>
+                            <div class="subtitle">Cases recentes e estudos</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="link" href="https://www.tiktok.com/@_devjourneyr?_t=ZM-8zfnMvkPu4s&_r=1" target="_blank" rel="noopener" data-="Tik Tok">
+                    <div class="left">
+                        <svg class="ico" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg>
+                        <div>
+                            <div class="label">Tik Tok</div>
+                            <div class="subtitle">Videos curtos de dicas</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="link" href="https://github.com/FELIIX-007" target="_blank" rel="noopener" data-="github">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.9 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.51.12-3.14 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.63.24 2.84.12 3.14.77.84 1.24 1.91 1.24 3.22 0 4.58-2.8 5.6-5.47 5.9.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z" />
+                        </svg>
+                        <div>
+                            <div class="label">GitHub</div>
+                            <div class="subtitle">Repositórios e contribuições</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="link"
+                    href="https://www.linkedin.com/in/vinicius-felix-9216b4336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" rel="noopener" data-="linkedin">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 8.5h4V24h-4V8.5Zm7 0h3.83v2.1h.05c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.77 2.65 4.77 6.1V24h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V24h-4V8.5Z" />
+                        </svg>
+                        <div>
+                            <div class="label">LinkedIn</div>
+                            <div class="subtitle">Experiências e networking</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="link"
+                    href="https://wa.me/5585981163989?text=Olá! Gostaria de saber mais sobre seus serviços de design e desenvolvimento web."
+                    target="_blank" rel="noopener" data-key="contato">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.11 1.6 5.89L0 24l6.27-1.64A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52ZM12 21.5c-1.9 0-3.73-.5-5.34-1.47l-.38-.23-3.75.98 1-3.65-.25-.39A9.55 9.55 0 0 1 2.5 12C2.5 6.76 6.76 2.5 12 2.5S21.5 6.76 21.5 12 17.24 21.5 12 21.5Zm5.57-6.4c-.3-.15-1.74-.86-2-.96-.27-.1-.46-.14-.64.15-.2.3-.75.96-.92 1.16-.17.2-.34.22-.64.08-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.5-1.76-1.67-2.06-.17-.3 0-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.29.3-.49.1-.2.05-.36-.02-.51-.07-.15-.64-1.55-.88-2.13-.23-.56-.47-.49-.64-.5l-.55-.01c-.2 0-.5.07-.76.36-.26.3-1 1-1 2.42 0 1.42 1.03 2.8 1.17 3 .15.2 2.03 3.1 4.9 4.36.69.3 1.23.48 1.65.62.7.22 1.33.19 1.83.11.56-.08 1.74-.71 1.98-1.4.24-.7.24-1.3.17-1.43-.07-.12-.26-.2-.56-.35Z" />
+                        </svg>
+                        <div>
+                            <div class="label">Fale comigo</div>
+                            <div class="subtitle">WhatsApp • Orçamentos e dúvidas</div>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-        </div> <!-- div secundaria -->
-    </div> <!-- div paincipal -->
+            <div class="grid" style="margin-top:14px">
+                <a class="link" href="mailto:contatofelix07@gmail.com" target="_blank" rel="noopener" data-key="email">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M3 6h18v12H3z" />
+                            <path d="m3 6 9 7 9-7" />
+                        </svg>
+                        <div class="label">E‑mail</div>
+                    </div>
+                </a>
+                <a class="link" href="https://www.instagram.com/_devjourneyr?igsh=MTNnb2hrbmJoZjZtNg==" target="_blank"
+                    rel="noopener" data-key="instagram">
+                    <div class="left">
+                        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <rect x="3" y="3" width="18" height="18" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" />
+                        </svg>
+                        <div class="label">Instagram</div>
+                    </div>
+                </a>
+            </div>
+            <footer>
+                <span>© <span id="year"></span> devjourneyr</span>
+            </footer>
+        </section>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="animacoes.js"></script>
 </body>
+
 </html>
