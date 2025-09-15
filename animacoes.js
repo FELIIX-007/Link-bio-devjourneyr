@@ -30,6 +30,7 @@ function toast(msg) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2000);
 }
-
+// ===== Acessibilidade: foco visível ===== 
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Tab') document.body.classList.add('outline'); });
 
 
